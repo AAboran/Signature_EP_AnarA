@@ -2,6 +2,8 @@
 
 The full name **Europa Pharmaceuticals** appears together in matching type, without a separate small “Pharmaceuticals” subtitle. The signature retains Anar Ahmadzada, Head of Business Development, his existing mobile and WhatsApp numbers, the linked Boran&Co crest, and the original confidentiality paragraph.
 
+The Europa logo links to https://www.europapharmaceutical.com/. The link is included when copying the signature into Outlook or downloading the email HTML.
+
 ## Upload these four files
 
 There are **no subfolders**. All the page code is contained in `index.html`.

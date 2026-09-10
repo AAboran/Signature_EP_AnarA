@@ -36,6 +36,7 @@ window.EUROPA_SIGNATURE_CONFIG = {
   name: "Anar Ahmadzada",
   title: "Head of Business Development",
   company: "Europa Pharmaceuticals",
+  logoUrl: "https://www.europapharmaceutical.com/",
   mobile: "+421 944 324 372",
   whatsapp: "+994 70 225 99 66",
   email: "",
@@ -82,7 +83,7 @@ window.EUROPA_SIGNATURE_CONFIG = {
     const base = new URL('./', assetBase.endsWith('/') ? assetBase : assetBase + '/');
     const imageUrl = filename => esc(new URL(filename, base).href);
     const groupUrl = esc(webUrl(config.groupUrl) || 'https://www.boranco.eu/');
-    const companyUrl = webUrl(config.website);
+    const companyUrl = webUrl(config.logoUrl || config.website);
     const emblem = `<img src="${imageUrl('europa-emblem.png')}" alt="${esc(config.company)}" width="68" height="69" style="display:block;width:68px;height:69px;border:0;outline:none;text-decoration:none;">`;
     const list = contacts(config);
     let contactRows = '';
