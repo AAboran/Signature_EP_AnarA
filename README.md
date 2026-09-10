@@ -1,5 +1,7 @@
 # Europa Pharmaceuticals — easy upload
 
+The refined design adds an Italian editorial feel: an italic serif name, warm ivory contact panels, champagne-gold lines and subtle wine-red accents. The layout stays fluid and uses email-friendly inline formatting.
+
 The full name **Europa Pharmaceuticals** appears together in matching type, without a separate small “Pharmaceuticals” subtitle. The signature retains Anar Ahmadzada, Head of Business Development, his existing mobile and WhatsApp numbers, the linked Boran&Co crest, and the original confidentiality paragraph.
 
 The Europa logo links to https://www.europapharmaceutical.com/. The link is included when copying the signature into Outlook or downloading the email HTML.

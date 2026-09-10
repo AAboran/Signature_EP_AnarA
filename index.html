@@ -73,10 +73,10 @@ window.EUROPA_SIGNATURE_CONFIG = {
   }
   function contactCell(item, isLeft, isLastRow, single) {
     const width = single ? '100%' : '50%';
-    const value = `<span style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#172541;overflow-wrap:anywhere;word-wrap:break-word;">${esc(item.value)}</span>`;
-    return `<td width="${width}"${single ? ' colspan="2"' : ''} valign="top" style="width:${width};padding:12px 16px;${isLeft && !single ? 'border-right:1px solid #e4dfd2;' : ''}${isLastRow ? '' : 'border-bottom:1px solid #e4dfd2;'}">
-      <div style="font-family:Arial,Helvetica,sans-serif;font-size:8px;line-height:12px;letter-spacing:1.7px;color:#74603b;font-weight:bold;text-transform:uppercase;">${esc(item.label)}</div>
-      <div style="padding-top:3px;">${item.href ? `<a href="${esc(item.href)}" style="color:#172541;text-decoration:none;">${value}</a>` : value}</div>
+    const value = `<span style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:19px;color:#172541;overflow-wrap:anywhere;word-wrap:break-word;">${esc(item.value)}</span>`;
+    return `<td width="${width}"${single ? ' colspan="2"' : ''} valign="top" style="width:${width};padding:13px 18px;${isLastRow ? '' : 'border-bottom:1px solid #e7ddcc;'}">
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:8px;line-height:12px;letter-spacing:1.7px;color:#874439;font-weight:bold;text-transform:uppercase;">${esc(item.label)}</div>
+      <div style="padding-top:4px;">${item.href ? `<a href="${esc(item.href)}" style="color:#172541;text-decoration:none;">${value}</a>` : value}</div>
     </td>`;
   }
   function markup(config, assetBase) {
@@ -93,38 +93,38 @@ window.EUROPA_SIGNATURE_CONFIG = {
     }
     return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="${tableStyle}table-layout:fixed;">
       <tbody>
-        <tr><td style="padding:0 0 14px;">
+        <tr><td style="padding:0 0 18px;">
           <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="${tableStyle}table-layout:fixed;">
             <tbody><tr>
-              <td width="18%" style="width:18%;border-top:1px solid #dcd6c9;font-size:0;line-height:0;">&#8203;</td>
-              <td width="19%" style="width:19%;border-top:2px solid #b6944e;font-size:0;line-height:0;">&#8203;</td>
-              <td width="7%" style="width:7%;border-top:2px solid #172541;font-size:0;line-height:0;">&#8203;</td>
-              <td width="56%" style="width:56%;border-top:1px solid #dcd6c9;font-size:0;line-height:0;">&#8203;</td>
+              <td width="18%" style="width:18%;border-top:1px solid #dfd5c1;font-size:0;line-height:0;mso-line-height-rule:exactly;">&#8203;</td>
+              <td width="22%" style="width:22%;border-top:2px solid #b99a60;font-size:0;line-height:0;mso-line-height-rule:exactly;">&#8203;</td>
+              <td width="2%" style="width:2%;border-top:2px solid #874439;font-size:0;line-height:0;mso-line-height-rule:exactly;">&#8203;</td>
+              <td width="58%" style="width:58%;border-top:1px solid #dfd5c1;font-size:0;line-height:0;mso-line-height-rule:exactly;">&#8203;</td>
             </tr></tbody>
           </table>
         </td></tr>
         <tr><td bgcolor="#ffffff" style="background-color:#ffffff;">
           ${tableOpen}<tbody><tr>
-            <td width="84" valign="middle" style="width:84px;padding:2px 16px 16px 0;">${companyUrl ? `<a href="${esc(companyUrl)}" style="text-decoration:none;">${emblem}</a>` : emblem}</td>
-            <td valign="middle" style="padding:0 0 16px;">
-              <div style="font-family:Georgia,'Times New Roman',serif;font-size:25px;line-height:31px;color:#172541;letter-spacing:.2px;">${esc(config.company)}</div>
+            <td width="84" valign="middle" style="width:84px;padding:2px 16px 18px 0;">${companyUrl ? `<a href="${esc(companyUrl)}" style="text-decoration:none;">${emblem}</a>` : emblem}</td>
+            <td valign="middle" style="padding:0 0 18px;">
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:25px;line-height:32px;color:#172541;letter-spacing:-.3px;">${esc(config.company)}</div>
             </td>
           </tr></tbody></table>
         </td></tr>
-        <tr><td bgcolor="#172541" style="background-color:#172541;border-top:1px solid #b6944e;border-bottom:1px solid #b6944e;padding:17px 18px 18px;">
-          <div style="font-family:Georgia,'Times New Roman',serif;font-size:24px;line-height:29px;color:#f3e9cf;letter-spacing:.8px;">${esc(config.name)}</div>
-          ${config.title ? `<div style="padding-top:6px;font-family:Arial,Helvetica,sans-serif;font-size:9px;line-height:15px;color:#dfceaa;letter-spacing:1.5px;text-transform:uppercase;">${esc(config.title)}</div>` : ''}
+        <tr><td bgcolor="#142139" style="background-color:#142139;border-top:1px solid #b99a60;border-left:3px solid #b99a60;padding:19px 20px 20px;">
+          <div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:29px;line-height:35px;color:#f7edd7;letter-spacing:.1px;">${esc(config.name)}</div>
+          ${config.title ? `<div style="padding-top:8px;font-family:Arial,Helvetica,sans-serif;font-size:9px;line-height:15px;color:#d6bd8a;letter-spacing:1.7px;text-transform:uppercase;">${esc(config.title)}</div>` : ''}
         </td></tr>
-        ${contactRows ? `<tr><td style="padding-top:9px;">
-          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#f8f6f1" style="${tableStyle}table-layout:fixed;background-color:#f8f6f1;"><tbody>${contactRows}</tbody></table>
+        ${contactRows ? `<tr><td style="padding:0;border-bottom:1px solid #dfd5c1;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#faf6ee" style="${tableStyle}table-layout:fixed;background-color:#faf6ee;"><tbody>${contactRows}</tbody></table>
         </td></tr>` : ''}
-        <tr><td style="padding:16px 0 12px;border-bottom:1px solid #e4dfd2;">
+        <tr><td style="padding:16px 0 14px;border-bottom:1px solid #dfd5c1;">
           ${tableOpen}<tbody><tr>
-            <td width="52" valign="middle" style="width:52px;padding:0 12px 0 0;">
-              <a href="${groupUrl}" style="text-decoration:none;"><img src="${imageUrl('boranco-crest.png')}" alt="Boran&amp;Co coat of arms" width="40" height="38" style="display:block;width:40px;height:38px;border:0;outline:none;"></a>
+            <td width="58" valign="middle" style="width:58px;padding:0 14px 0 0;">
+              <a href="${groupUrl}" style="text-decoration:none;"><img src="${imageUrl('boranco-crest.png')}" alt="Boran&amp;Co coat of arms" width="44" height="42" style="display:block;width:44px;height:42px;border:0;outline:none;"></a>
             </td>
             <td valign="middle" style="padding:0;">
-              <div style="font-family:Georgia,'Times New Roman',serif;font-size:13px;line-height:18px;color:#66523e;">A member of <a href="${groupUrl}" style="color:#76362f;text-decoration:none;">${esc(config.groupName)}</a></div>
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:13px;line-height:18px;color:#76644c;"><span style="font-style:italic;">A member of</span> <a href="${groupUrl}" style="color:#874439;text-decoration:none;">${esc(config.groupName)}</a></div>
               <div style="padding-top:2px;font-family:Arial,Helvetica,sans-serif;font-size:9px;line-height:13px;letter-spacing:.5px;"><a href="${groupUrl}" style="color:#5f6670;text-decoration:none;">${esc((webUrl(config.groupUrl) || 'https://www.boranco.eu/').replace(/^https?:\/\/(www\.)?/i, '').replace(/\/$/, ''))}</a></div>
             </td>
           </tr></tbody></table>
