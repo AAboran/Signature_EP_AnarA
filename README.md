@@ -4,6 +4,8 @@ The full name **Europa Pharmaceuticals** appears together in matching type, with
 
 The Europa logo links to https://www.europapharmaceutical.com/. The link is included when copying the signature into Outlook or downloading the email HTML.
 
+The contact grid also includes a clickable Web link to https://www.europapharmaceutical.com/ and the Office address: Štefánikova 879/5, 811 06 Bratislava, Slovakia.
+
 ## Upload these four files
 
 There are **no subfolders**. All the page code is contained in `index.html`.
